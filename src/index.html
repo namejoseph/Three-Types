@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column" id="column1">
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="type" value="artist"> Artist</label>
+                <label><input type="checkbox" name="type" value="brand"> Brand</label>
+                <label><input type="checkbox" name="type" value="fan"> Fan</label>
+            </div>
+            <button id="submitBtn">Submit</button>
+        </div>
+
+        <div class="column hidden" id="column2">
+            <div class="selected-options">
+                <div class="options-list">
+                    <div class="option" data-value="artist">Artist</div>
+                    <div class="option" data-value="brand">Brand</div>
+                    <div class="option" data-value="fan">Fan</div>
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column hidden" id="column3">
+            <h2 id="selectedType">Artist</h2>
+            <h3>Dashboard</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
